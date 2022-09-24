@@ -33,5 +33,10 @@
             language="Solidity"
             implementationClass="com.fairyfromalfeya.everscalesolidityplugin.SolidityParserDefinition"
         />
+        <lang.syntaxHighlighterFactory
+            language="Solidity"
+            implementationClass="com.fairyfromalfeya.everscalesolidityplugin.SoliditySyntaxHighlighterFactory"
+        />
+        <colorSettingsPage implementation="com.fairyfromalfeya.everscalesolidityplugin.SolidityColorSettingsPage" />
     </extensions>
 </idea-plugin>
