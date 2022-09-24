@@ -22,6 +22,12 @@
     <!-- Extension points defined by the plugin.
          Read more: https://plugins.jetbrains.com/docs/intellij/plugin-extension-points.html -->
     <extensions defaultExtensionNs="com.intellij">
-
+        <fileType
+            name="Solidity File"
+            implementationClass="com.fairyfromalfeya.everscalesolidityplugin.SolidityFileType"
+            fieldName="INSTANCE"
+            language="Solidity"
+            extensions="sol"
+        />
     </extensions>
 </idea-plugin>
