@@ -29,5 +29,9 @@
             language="Solidity"
             extensions="sol"
         />
+        <lang.parserDefinition
+            language="Solidity"
+            implementationClass="com.fairyfromalfeya.everscalesolidityplugin.SolidityParserDefinition"
+        />
     </extensions>
 </idea-plugin>

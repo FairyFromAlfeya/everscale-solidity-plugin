@@ -1,0 +1,20 @@
+{
+  parserClass="com.fairyfromalfeya.everscalesolidityplugin.parser.SolidityParser"
+
+  extends="com.intellij.extapi.psi.ASTWrapperPsiElement"
+
+  psiClassPrefix="Solidity"
+  psiImplClassSuffix="Impl"
+  psiPackage="com.fairyfromalfeya.everscalesolidityplugin.psi"
+  psiImplPackage="com.fairyfromalfeya.everscalesolidityplugin.psi.impl"
+
+  elementTypeHolderClass="com.fairyfromalfeya.everscalesolidityplugin.psi.SolidityTypes"
+  elementTypeClass="com.fairyfromalfeya.everscalesolidityplugin.psi.SolidityElementType"
+  tokenTypeClass="com.fairyfromalfeya.everscalesolidityplugin.psi.SolidityTokenType"
+}
+
+solidityFile ::= item_*
+
+private item_ ::= (property|COMMENT|CRLF)
+
+property ::= (KEY? SEPARATOR VALUE?) | KEY
